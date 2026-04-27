@@ -91,7 +91,6 @@ def guckObGewonnen(spieler):
 spieler = "x"
 zugGespielt = False
 gewonnen = False
-guckObGewonnen(spieler)
 
 while True:
 
