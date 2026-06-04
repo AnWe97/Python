@@ -100,10 +100,10 @@ while True:
         print(f"{spieler} hat gewonnen!")
         break
 
-    if spieler == "o" and zugGespielt == True:
+    if spieler == "o" and zugGespielt:
         spieler = "x"
         zugGespielt = False
-    elif spieler == "x" and zugGespielt == True:
+    elif spieler == "x" and zugGespielt:
         spieler = "o"
         zugGespielt = False
 
