@@ -139,13 +139,10 @@ while True:
 
     else:
         #Game start after laying mines
-
-
         chosenRow = input("What row do you want to check (A, B, C, D, E, F, G): ")
 
         if chosenRow.isalpha() and chosenRow.upper() in validLetters:
             #Row check
-
             chosenCol = input("What column do you want to check (1, 2, 3, 4, 5): ")
 
             if not chosenCol.isdigit() or int(chosenCol) not in validNumbers:
