@@ -69,6 +69,8 @@ def get_time_in_words() -> tuple:
     """Korrekten ZEHN Wert auswählen"""
     if minutes.upper() == "ZEHN":
         minutes += "_MINUTE"
+    elif hour.upper() == "ZEHN":
+        hour += "_STUNDE"
 
     return WORD_POSITIONS[hour.upper()], WORD_POSITIONS[minutes.upper()]
 
