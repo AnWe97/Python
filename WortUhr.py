@@ -4,6 +4,8 @@ from num2words import num2words
 
 """FUNCTIONS"""
 def reset_all() -> None:
+    """Reseted das Bild auf Standart"""
+    
     for zeile in labelarray:
         for label in zeile:
             label.config(fg="white")
@@ -140,7 +142,7 @@ for array in LETTERS:
     frame.pack(side="top", fill="x", expand=True)
     labelarray.append([])
 
-    for index, letter in enumerate(array):
+    for letter in array:
         label = tk.Label(frame, text=letter, fg="White", bg="Black", font=font)
         label.pack(side="left", fill="x", expand=True)
         labelarray[-1].append(label)
